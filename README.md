@@ -1,7 +1,4 @@
- Final README.md
-markdown
-Copy
-Edit
+
 # 🌐 Language Learning Chatbot
 
 This project is a Django-based chatbot that helps users learn new languages interactively using AI. It sets up a scenario based on the user's level and language preferences, engages in conversation, corrects user mistakes, and provides personalized feedback.
