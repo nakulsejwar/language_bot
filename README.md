@@ -1,93 +1,94 @@
-# language_bot
- 
-✅ README.md
+ Final README.md
 markdown
 Copy
 Edit
-# 🌍 Language Learning Chatbot (Django + AI)
+# 🌐 Language Learning Chatbot
 
-This is a simple yet powerful chatbot that helps users practice and learn new languages using AI. It simulates conversations, corrects user mistakes, maintains a list of them, and gives personalized feedback.
+This project is a Django-based chatbot that helps users learn new languages interactively using AI. It sets up a scenario based on the user's level and language preferences, engages in conversation, corrects user mistakes, and provides personalized feedback.
 
----
-
-## ✨ Features
-
-- 🔤 Learner selects known and target languages
-- 🚀 Chats with AI in the target language
-- 🧠 AI corrects mistakes and tracks them
-- 📊 Summarizes mistakes and gives feedback at the end
-- 💡 Clean and modern UI with responsive design
+**Live Demo:** _Coming Soon_  
+**Repo:** https://github.com/nakulsejwar/language_bot
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Features
 
-- **Backend:** Django, Python
-- **AI:** OpenAI GPT / Hugging Face Transformers (fallback)
-- **Database:** SQLite (for storing user mistakes)
-- **Frontend:** HTML + CSS (styled form interface)
+- Select a language to learn and your current level
+- AI-driven conversations in the target language
+- Corrects grammar and vocabulary mistakes
+- Stores user mistakes using SQLite
+- Displays a review summary to improve weak areas
+- Clean and minimal UI with form-based interaction
 
 ---
 
-## 📦 Setup Instructions
+## 🧠 Tech Stack
 
-### 1. Clone the repo
+- **Backend:** Django (Python)
+- **AI Models:** OpenAI GPT or Hugging Face Transformers
+- **Database:** SQLite
+- **Frontend:** HTML, CSS
+
+---
+
+## 📁 Project Structure
+
+language_bot/ ├── chatbot/ │ ├── migrations/ │ ├── templates/ │ │ └── chatbot.html │ ├── init.py │ ├── admin.py │ ├── apps.py │ ├── forms.py │ ├── models.py │ ├── urls.py │ └── views.py ├── language_bot/ │ ├── init.py │ ├── settings.py │ ├── urls.py │ └── wsgi.py ├── db.sqlite3 ├── manage.py └── requirements.txt
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/language-learning-bot.git
-cd language-learning-bot
-2. Create virtual environment and install dependencies
+git clone https://github.com/nakulsejwar/language_bot.git
+cd language_bot
+2. Create a virtual environment and activate it
 bash
 Copy
 Edit
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
+3. Install dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-3. Add your OpenAI Key (Optional if using Hugging Face)
-Create a .env file in the project root:
+4. Set up OpenAI (optional if using Hugging Face)
+Create a .env file and add:
 
 ini
 Copy
 Edit
 OPENAI_API_KEY=your_openai_key_here
-Or configure Hugging Face-based model in views.py.
+If using Hugging Face, make sure the model is defined in views.py.
 
-4. Run database migrations
+5. Run migrations
 bash
 Copy
 Edit
 python manage.py migrate
-5. Run the development server
+6. Start the development server
 bash
 Copy
 Edit
 python manage.py runserver
-Go to http://127.0.0.1:8000 to chat with the bot!
+Visit http://127.0.0.1:8000/ to use the chatbot.
 
-📂 Project Structure
-bash
-Copy
-Edit
-language_bot/
-├── chatbot/
-│   ├── models.py        # Stores mistakes per user
-│   ├── views.py         # Handles AI chat logic
-│   ├── forms.py         # User input form
-│   └── templates/
-│       └── chatbot.html # The chatbot UI
-├── manage.py
-├── db.sqlite3
-└── requirements.txt
-📸 Screenshots
-Chat Form UI	Response Display
-🧠 How it Works
-User selects known and target language.
+💬 How it Works
+User selects the language to learn and their proficiency.
 
-The bot sets up a scene in the learning language.
+AI sets a scene and starts chatting in the chosen language.
 
-User interacts via simple form.
+Mistakes are detected and stored in SQLite.
 
-AI replies in target language and tracks mistakes.
+At the end, a summary of mistakes is shown with improvement tips.
 
-At end of session, a review is displayed with suggestions.
-
+🖼 UI Preview
+Chatbot UI
+<sub>(Update screenshot path if you upload images in your repo)</sub>
