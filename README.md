@@ -88,4 +88,4 @@ At the end, a summary of mistakes is shown with improvement tips.
 
 🖼 UI Preview
 Chatbot UI
-<sub>(Update screenshot path if you upload images in your repo)</sub>
+<sub>https://github.com/nakulsejwar/language_bot/blob/main/ui.png</sub>
