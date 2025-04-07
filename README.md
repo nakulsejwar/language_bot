@@ -68,7 +68,8 @@ Visit http://127.0.0.1:8000/ in your browser to chat with the bot.
 
 🖼 UI Preview
 Here’s what the chatbot UI looks like:
-![Chatbot UI](https://github.com/nakulsejwar/language_bot/blob/main/ui.png)
+
+![ui](https://github.com/user-attachments/assets/aa646352-dbef-4d0a-a51f-67634d9cf6bf)
 
 
 
